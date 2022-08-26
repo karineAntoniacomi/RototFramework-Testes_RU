@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220826 18:11:15.450" rpa="false" schemaversion="3">
+<suite id="s1" name="Casosdeteste" source="d:\UFPR\Período Atual\Engenharia de Software II\11 - Testes Automatizados\Testes\RU\casosdeteste.robot">
+<test id="s1-t1" name="Acessar cardápio do RU" line="11">
+<kw name="Abrir browser" library="resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220826 18:11:15.686" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220826 18:11:15.686" endtime="20220826 18:11:17.063"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220826 18:11:17.064" endtime="20220826 18:11:17.194"/>
+</kw>
+<status status="PASS" starttime="20220826 18:11:15.686" endtime="20220826 18:11:17.195"/>
+</kw>
+<kw name="Acessar o site do RU" library="resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220826 18:11:17.197" level="INFO">Opening url 'https://pra.ufpr.br/ru/ru-central/'</msg>
+<status status="PASS" starttime="20220826 18:11:17.196" endtime="20220826 18:11:18.414"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220826 18:11:18.417" level="INFO">Page title is 'Restaurante Universitário'.</msg>
+<status status="PASS" starttime="20220826 18:11:18.414" endtime="20220826 18:11:18.417"/>
+</kw>
+<status status="PASS" starttime="20220826 18:11:17.196" endtime="20220826 18:11:18.417"/>
+</kw>
+<kw name="Clicar no menu Cardápio" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MENU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220826 18:11:18.419" level="INFO">Clicking element '(//a[@title='Cardápio'][contains(.,'Cardápio')])[2]'.</msg>
+<status status="PASS" starttime="20220826 18:11:18.418" endtime="20220826 18:11:19.576"/>
+</kw>
+<status status="PASS" starttime="20220826 18:11:18.418" endtime="20220826 18:11:19.576"/>
+</kw>
+<kw name="Verificar se a página de cardápios foi disponibilzada" library="resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TIT_CARDAPIO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220826 18:11:19.577" endtime="20220826 18:11:19.601"/>
+</kw>
+<status status="PASS" starttime="20220826 18:11:19.577" endtime="20220826 18:11:19.601"/>
+</kw>
+<kw name="Fechar browser" library="resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220826 18:11:19.824" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220826 18:11:19.602" endtime="20220826 18:11:19.825"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220826 18:11:19.825" endtime="20220826 18:11:22.051"/>
+</kw>
+<status status="PASS" starttime="20220826 18:11:19.602" endtime="20220826 18:11:22.051"/>
+</kw>
+<status status="PASS" starttime="20220826 18:11:15.685" endtime="20220826 18:11:22.052"/>
+</test>
+<doc>Casos de teste para exemplo de cardápio RU</doc>
+<status status="PASS" starttime="20220826 18:11:15.465" endtime="20220826 18:11:22.054"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Casosdeteste">Casosdeteste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

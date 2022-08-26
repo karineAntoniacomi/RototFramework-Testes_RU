@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220821 16:39:49.326" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\karin\.vscode\extensions\robocorp.robotframework-lsp-1.0.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Acessar o site do RU">
+<msg timestamp="20220821 16:39:52.035" level="FAIL">No keyword with name 'Acessar o site do RU' found.</msg>
+<status status="FAIL" starttime="20220821 16:39:52.035" endtime="20220821 16:39:52.035"/>
+</kw>
+<kw name="Clicar no menu Cardápio">
+<status status="NOT RUN" starttime="20220821 16:39:52.036" endtime="20220821 16:39:52.036"/>
+</kw>
+<kw name="Verificar se a página de cardápios foi disponibilzada">
+<status status="NOT RUN" starttime="20220821 16:39:52.037" endtime="20220821 16:39:52.037"/>
+</kw>
+<status status="PASS" starttime="20220821 16:39:49.349" endtime="20220821 16:39:57.091"/>
+</kw>
+<status status="PASS" starttime="20220821 16:39:49.348" endtime="20220821 16:39:57.091"/>
+</test>
+<status status="PASS" starttime="20220821 16:39:49.327" endtime="20220821 16:39:57.092"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
